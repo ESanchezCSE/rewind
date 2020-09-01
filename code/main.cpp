@@ -1,8 +1,11 @@
 #include <iostream>
 
-using namespace std;
+#include "declare.h"
+
+using std::cout;
+using std::cin;
 
 int main(){
-    cout << "Hello World";
+    menu();
     return 0;
 }
