@@ -2,6 +2,7 @@
 #include <string>
 
 #include "declare.h"
+#include "db.h"
 
 int main(){
     std::string menu_choice;
@@ -13,7 +14,7 @@ int main(){
         if(check_integer(menu_choice) == true){
             //User selection is an integer.
             std::cout << "your choice is a number!!\n";
-
+            menu_selection(menu_choice);
         }
         else{
             //User selection is an invalid format.

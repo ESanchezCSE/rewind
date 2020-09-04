@@ -8,7 +8,7 @@
  */
 void welcome_message(){
     std::cout << "Hello, welcome to Rewind! A program designed to keep\n";
-    std::cout << "track of your history here on planet Earth";
+    std::cout << "track of your history here on planet Earth\n";
 }
 
 /**
@@ -44,7 +44,7 @@ void invalid_main_menu_choice(){
 /**
  * Determines wheather a string an integer.
  * 
- * @param String that needs to be check if its an integer.
+ * @param string that needs to be check if its an integer.
  * 
  * @return true if string is an integer| false if string is not an integer.
  */
@@ -56,4 +56,27 @@ bool check_integer(std::string str){
     }
     
     return true;
+}
+
+void menu_selection(std::string &menu_choice){
+    // Convert menu_choice from string to integer
+    int int_menu_choice = std::stoi(menu_choice);
+    switch(int_menu_choice){
+        case 0:
+            std::cout << "exiting program\n";
+            menu_choice.clear();
+            break;
+        case 1:
+            std::cout << "choice 1\n";
+            break;
+        case 2:
+            std::cout << "choice 2\n";
+            break;
+        default:
+            std::cout << "ERROR:: Selection is out of scope of menu!" << std::endl;
+            std::cout << "Please enter a valid menu choice" << std::endl;
+            return;
+    }
+
+    return;
 }
