@@ -103,6 +103,7 @@ std::string parse_path_from_current_directory(std::string currentPath){
 std::string add_directory_to_path(std::string working_path, std::string directory_name){
     return working_path.append(directory_name);
 }
+
 /**
  * Appends the file name that you wish to work with to the path containing the directory the file should be located in.
  * 
