@@ -58,6 +58,12 @@ bool check_integer(std::string str){
     return true;
 }
 
+/**
+ * Converts user choice and determines which of menu option was selected, and performs
+ * calls function to perform the selection option.
+ * 
+ * @param string containing the input from the user. This is converted into an integer.
+ */
 void menu_selection(std::string &menu_choice){
     // Convert menu_choice from string to integer
     int int_menu_choice = std::stoi(menu_choice);
